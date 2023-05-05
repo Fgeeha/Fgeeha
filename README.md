@@ -1,7 +1,7 @@
 # Hi there 👋
 
 
-**I'm a programmer specializing in Python development and working with databases. Here's some information about my skills and experience:**
+I'm a programmer specializing in **Python development and working with databases**. Here's some information about my skills and experience:
 
 
 ## **Skills and Technologies**
