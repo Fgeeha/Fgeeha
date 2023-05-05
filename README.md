@@ -4,7 +4,7 @@
 **I'm a programmer specializing in Python development and working with databases. Here's some information about my skills and experience:**
 
 
-**Skills and Technologies**
+## **Skills and Technologies**
 
 - [X] Programming Languages: Python
 
@@ -21,7 +21,7 @@
 - [ ] Make a full dive into Docker
 
 
-**Contact**
+## **Contact**
 
 
 I'm always open to collaboration and discussion new projects. If you have any questions or proposals, please feel free to reach out to me:
