@@ -18,7 +18,7 @@
 
 - [X] Proficient in Git and GitHub
 
-- [ ] To make a full dive into Docker
+- [ ] Fully dive into Docker
 
 
 ## **Contact**
