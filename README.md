@@ -18,7 +18,7 @@ I'm a programmer specializing in **Python development and working with databases
 
 - [X] Proficient in Git and GitHub
 
-- [ ] Fully dive into Docker
+- [X] Fully dive into Docker
 
 
 ## **Contact**
