@@ -30,3 +30,6 @@ Tg: [@FgeeHa](https://t.me/fgeeha)
 
 
 Thank you for visiting my GitHub profile!
+
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=fgeeha&show_icons=true&theme=synthwave)
