@@ -42,6 +42,7 @@ Thank you for visiting my GitHub profile!
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fgeeha&layout=donut&theme=synthwave" alt="Fgeeha's GitHub Stats"> 
     </a>
 </div>
+<br>
 <div align="center">
     <a href="https://leetcode.com/fgeeha">
       <img src="https://img.shields.io/badge/dynamic/json?style=flat-square&color=%23ffa116&label=leetcode.com&suffix=%20problems%20solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Ffgeeha&logo=leetcode&logoColor=yellow&labelColor=%23111827&cacheSeconds=604800" alt="problems solved on leetcode.com"> 
