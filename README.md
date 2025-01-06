@@ -54,7 +54,7 @@ Thank you for visiting my GitHub profile!
 </div><br><br>
 
 <div align="center" style="margin: 40px 0">
-   <a href="https://github.com/romankh3/github-profile-views-counter">
-       <img width="175px" src="https://komarev.com/ghpvc/?username=fgeeha">
+   <a href="https://komarev.com/ghpvc/?username=fgeeha">
+       <img width="125px" src="https://komarev.com/ghpvc/?username=fgeeha">
    </a>
 </div>
