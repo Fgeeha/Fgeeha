@@ -14,7 +14,7 @@ I'm a programmer specializing in **Python development and working with databases
 
 - [X] Database Skills: SQL (queries, modeling)
 
-- [X] Experience with Linux Debian 11
+- [X] Experience with Linux Debian
 
 - [X] Proficient in Git and GitHub
 
