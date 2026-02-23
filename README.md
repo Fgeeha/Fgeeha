@@ -1,39 +1,41 @@
-# Hi there 👋
+# Hi there!
+
+I'm **Nikita Kolesnikov**, a software developer experienced in **backend development**, **AI/ML** and **DevOps**. I work with **Python**, **Go** and **PHP**. 48+ open-source projects.
 
 
-I'm a programmer specializing in **Python development and working with databases**. Here's some information about my skills and experience:
+## Skills and Technologies
+
+- [X] Programming Languages: **Python, Go, PHP**
+- [X] Backend Frameworks: **Django, FastAPI, Flask, aiogram**
+- [X] AI / ML: **RAG, LangChain, Ollama, Keras, pandas, numpy**
+- [X] Databases: **SQL, PostgreSQL, MySQL**
+- [X] DevOps: **Git, Docker, Linux, Trivy, CI/CD**
+- [X] Monitoring: **Prometheus, Grafana**
+- [X] GUI: **PyQt6, tkinter**
 
 
-## **Skills and Technologies**
+## Featured Projects
 
-- [X] Programming Languages: Python
-
-- [X] Object-Oriented Programming (OOP)
-
-- [X] Libraries and Frameworks: aiogram, pymysql, Django, pandas, numpy, pyqt6, tkinter, keras
-
-- [X] Database Skills: SQL (queries, modeling)
-
-- [X] Experience with Linux Debian
-
-- [X] Proficient in Git and GitHub
-
-- [X] Fully dive into Docker
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [ROoP](https://github.com/Fgeeha/ROoP) | Local AI assistant with RAG powered by Ollama | Python, Django, RAG, Ollama |
+| [rocm-smi-exporter](https://github.com/Fgeeha/rocm-smi-exporter) | Prometheus exporter for AMD GPU metrics | Python, Prometheus, Grafana |
+| [monitor-dir](https://gitverse.ru/nkolesnikov/monitor-dir) | File integrity monitoring with Prometheus metrics | Python, Docker, Prometheus |
+| [Fast-Chat-Auth](https://github.com/Fgeeha/Fast-Chat-Auth) | Chat app with registration and JWT auth | FastAPI, JWT |
+| [Green-Sentry](https://github.com/Fgeeha/Green-Sentry) | Plant monitoring system | Python, FastAPI |
+| [PHPNewsHub](https://github.com/Fgeeha/PHPNewsHub) | News management system | PHP, PostgreSQL |
+| [XML2HTML Converter](https://github.com/Fgeeha/XML2HTML-Converter-for-University-Systems) | XML to HTML converter for university systems | Python |
 
 
-## **Contact**
+## Contact
 
-
-I'm always open to collaboration and discussion new projects. If you have any questions or proposals, please feel free to reach out to me:
-
-<div align='center' >
-   <a href="https://t.me/fgeeha" target="_blank"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a> &nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="https://www.linkedin.com/in/nikita-kolesnikov-337b78323/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<div align='center'>
+   <a href="https://fgeeha.github.io" target="_blank"><img src="https://img.shields.io/badge/Website-fgeeha.github.io-blue?style=for-the-badge&logo=googlechrome&logoColor=white"></a> &nbsp;&nbsp;
+   <a href="https://t.me/fgeeha" target="_blank"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a> &nbsp;&nbsp;
+   <a href="https://www.linkedin.com/in/nikita-kolesnikov-337b78323/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a> &nbsp;&nbsp;
+   <a href="https://gitverse.ru/nkolesnikov" target="_blank"><img src="https://img.shields.io/badge/GitVerse-profile-orange?style=for-the-badge"></a>
 </div>
 <br>
-
-
-Thank you for visiting my GitHub profile!
 
 <div align="center">
     <a href="#">
