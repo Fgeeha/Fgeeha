@@ -190,7 +190,20 @@ I'm interested in contributing to projects related to:
   >
 </picture>
 
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=Fgeeha&theme=synthwave&hide_border=true"
+  >
+  <img
+    height="180"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Fgeeha&theme=default&hide_border=true"
+    alt="GitHub Activity Graph"
+  >
+</picture>
+
 </div>
+
 
 ## Coding Activity
 
