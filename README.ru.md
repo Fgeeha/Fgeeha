@@ -56,13 +56,13 @@
 ### Последние коммиты
 
 <!-- NOW:START -->
-| Репозиторий | Описание | Обновлён |
-| --- | --- | --- |
-| [Tg-ollama](https://github.com/Fgeeha/Tg-ollama) | — | 2026-08-15 |
-| [max-ollama](https://github.com/Fgeeha/max-ollama) | — | 2026-08-15 |
-| [app-panel](https://github.com/Fgeeha/app-panel) | Простая стартовая страница на Flask, отображающая список приложений с переходами. | 2026-08-15 |
-| [nskolesnikov.ru-CMS](https://github.com/Fgeeha/nskolesnikov.ru-CMS) | — | 2026-08-15 |
-| [stress-tester](https://github.com/Fgeeha/stress-tester) | — | 2026-08-15 |
+| Репозиторий | Обновлён |
+| --- | --- |
+| [Tg-ollama](https://github.com/Fgeeha/Tg-ollama) | 15.08.2026 |
+| [max-ollama](https://github.com/Fgeeha/max-ollama) | 15.08.2026 |
+| [app-panel](https://github.com/Fgeeha/app-panel) | 15.08.2026 |
+| [nskolesnikov.ru-CMS](https://github.com/Fgeeha/nskolesnikov.ru-CMS) | 15.08.2026 |
+| [stress-tester](https://github.com/Fgeeha/stress-tester) | 15.08.2026 |
 <!-- NOW:END -->
 
 ## Стек
@@ -221,18 +221,6 @@
     height="180"
     src="https://github-stats-extended.vercel.app/api/top-langs/?username=Fgeeha&amp;layout=donut&amp;langs_count=8&amp;theme=default&amp;hide_border=true"
     alt="Наиболее используемые языки"
-  >
-</picture>
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-activity-graph.vercel.app/graph?username=Fgeeha&theme=synthwave&hide_border=true"
-  >
-  <img
-    height="180"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Fgeeha&theme=default&hide_border=true"
-    alt="График активности на GitHub"
   >
 </picture>
 

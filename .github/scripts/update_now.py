@@ -24,15 +24,22 @@ START = "<!-- NOW:START -->"
 END = "<!-- NOW:END -->"
 
 HEADERS = {
-    "README.md": ("Repository", "Description", "Updated"),
-    "README.ru.md": ("Репозиторий", "Описание", "Обновлён"),
+    "README.md": ("Repository", "Updated"),
+    "README.ru.md": ("Репозиторий", "Обновлён"),
 }
 
 
 def fetch_repos() -> list[dict[str, Any]]:
     """Return the most recently pushed own repositories, newest first."""
     url = f"https://api.github.com/users/{USER}/repos?sort=pushed&per_page=100&type=owner"
-    request = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/vnd.github+json",
+            # GitHub rejects requests without an explicit User-Agent
+            "User-Agent": f"{USER}-profile-readme",
+        },
+    )
     token = os.environ.get("GITHUB_TOKEN")
     if token:
         request.add_header("Authorization", f"Bearer {token}")
@@ -40,19 +47,21 @@ def fetch_repos() -> list[dict[str, Any]]:
         return json.load(response)
 
 
-def render(repos: list[dict[str, Any]], header: tuple[str, str, str]) -> str:
+def format_date(pushed_at: str) -> str:
+    """Convert an ISO timestamp into dd.mm.YYYY."""
+    return f"{pushed_at[8:10]}.{pushed_at[5:7]}.{pushed_at[0:4]}"
+
+
+def render(repos: list[dict[str, Any]], header: tuple[str, str]) -> str:
     """Render repositories as a Markdown table."""
     picked = [
         repo
         for repo in repos
         if not repo["fork"] and not repo["archived"] and repo["name"] not in SKIP
     ][:LIMIT]
-    lines = [f"| {header[0]} | {header[1]} | {header[2]} |", "| --- | --- | --- |"]
+    lines = [f"| {header[0]} | {header[1]} |", "| --- | --- |"]
     for repo in picked:
-        description = (repo.get("description") or "—").replace("|", "\\|")
-        lines.append(
-            f"| [{repo['name']}]({repo['html_url']}) | {description} | {repo['pushed_at'][:10]} |"
-        )
+        lines.append(f"| [{repo['name']}]({repo['html_url']}) | {format_date(repo['pushed_at'])} |")
     return "\n".join(lines)
 
 
@@ -113,9 +122,10 @@ def selftest() -> None:
     assert "Fgeeha" not in table, "profile repo must be skipped"
     assert "forked" not in table, "forks must be skipped"
     assert "[kept](https://example.com/kept)" in table
-    assert "a \\| b" in table, "pipes must be escaped"
-    assert "| — |" in table, "missing description falls back to a dash"
-    assert "| 2026-08-15 |" in table
+    assert "| 15.08.2026 |" in table, "date must be dd.mm.YYYY"
+    assert all(line.count("|") == 3 for line in table.splitlines()), "two columns only"
+    assert "a | b" not in table and "profile" not in table, "descriptions are gone"
+    assert format_date("2026-01-02T03:04:05Z") == "02.01.2026"
 
     text = f"before\n{START}\nold | junk\n{END}\nafter"
     out = replace_block(text, "NEW")
