@@ -1,0 +1,44 @@
+name: update now block
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: update-now
+  cancel-in-progress: true
+
+jobs:
+  update:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: check the update script
+        run: python3 .github/scripts/update_now.py --selftest
+
+      - name: refresh the NOW block
+        run: python3 .github/scripts/update_now.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: commit if changed
+        run: |
+          if git diff --quiet -- README.md README.ru.md; then
+            echo "nothing to update"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: обновление блока последних коммитов"
+          git push
