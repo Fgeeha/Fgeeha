@@ -2,6 +2,8 @@
 
 # Hi, I'm Nikita Kolesnikov 👋
 
+**English** · [Русский](README.ru.md)
+
 ### Backend & AI/ML Developer
 
 Building **self-hosted AI assistants**, **monitoring systems**,
@@ -37,6 +39,7 @@ Building **self-hosted AI assistants**, **monitoring systems**,
 * 🔭 Building local and privacy-focused **RAG applications**
 * 🧠 Interested in **LLM infrastructure, MLOps and AI observability**
 * ⚙️ Developing backend services with **Python, Go and PHP**
+* 🤖 Shipping **MAX messenger** bots and the tooling around them
 * 📊 Creating monitoring tools with **Prometheus and Grafana**
 * 🐳 Packaging reproducible environments with **Docker and CI/CD**
 * 🤝 Open to backend, AI infrastructure and open-source collaboration
@@ -44,28 +47,44 @@ Building **self-hosted AI assistants**, **monitoring systems**,
 ## Current Focus
 
 * Local LLM applications powered by Ollama
+* MAX messenger bots: templates, CI/CD and a GitHub Action for notifications
 * RAG evaluation, vector search and retrieval quality
 * ML training and inference pipelines with GPU acceleration
-* Monitoring for Linux and AMD GPU infrastructure
+* Monitoring for Linux and GPU infrastructure
 * CI/CD automation, security scanning and container workflows
+
+### Recently Pushed
+
+<!-- NOW:START -->
+| Repository | Description | Updated |
+| --- | --- | --- |
+| [Tg-ollama](https://github.com/Fgeeha/Tg-ollama) | — | 2026-08-15 |
+| [max-ollama](https://github.com/Fgeeha/max-ollama) | — | 2026-08-15 |
+| [app-panel](https://github.com/Fgeeha/app-panel) | Простая стартовая страница на Flask, отображающая список приложений с переходами. | 2026-08-15 |
+| [nskolesnikov.ru-CMS](https://github.com/Fgeeha/nskolesnikov.ru-CMS) | — | 2026-08-15 |
+| [stress-tester](https://github.com/Fgeeha/stress-tester) | — | 2026-08-15 |
+<!-- NOW:END -->
 
 ## Tech Stack
 
 **Languages:** Python, Go, PHP
 
-**Backend:** Django, FastAPI, Flask, aiogram
+**Backend:** Django, FastAPI, Flask, aiogram, maxapi
 
 **AI/ML:** RAG, LangChain, Ollama, PyTorch, Keras, pandas, NumPy
 
-**Databases:** PostgreSQL, MySQL, SQL, ChromaDB
+**Databases:** PostgreSQL, MySQL, SQLAlchemy 2, Alembic, ChromaDB
 
-**Infrastructure:** Docker, Docker Compose, Linux, GitHub Actions, Trivy
+**Infrastructure:** Docker, Docker Compose, Linux, GitHub Actions, Gitea Actions, Trivy
 
 **Observability:** Prometheus, Grafana, TensorBoard
 
 **Desktop:** PyQt6, Tkinter, Fyne
 
-**Tools:** Git, Make, Poetry, Nginx, Redis, Celery
+**Tools:** Git, Make, uv, ruff, pytest, pre-commit, Nginx, Caddy, Redis, Celery
+
+**Homelab:** Ryzen 7 7700 · RTX 5070 Ti · 96 GB RAM · Ubuntu 25.10 — models,
+databases and monitoring all run here first, cloud second.
 
 ---
 
@@ -136,11 +155,25 @@ Building **self-hosted AI assistants**, **monitoring systems**,
 | [Plant Disease ResNet50](https://github.com/Fgeeha/plant_disease_resnet50) | GPU-accelerated plant disease model training and inference    | PyTorch, ResNet50, CUDA, Docker, TensorBoard, Jupyter           |
 | [Stress Tester](https://github.com/Fgeeha/stress-tester)                   | Cross-platform CPU and RAM stability testing application      | Go, Fyne, memory safety controls, Windows and Linux CI          |
 
+### MAX Messenger Ecosystem
+
+Bots and tooling for [MAX](https://max.ru) — from a reusable project template to
+a GitHub Action that reports builds straight into a chat.
+
+| Project                                                                                  | What it does                                                                    | Stack                                            |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------ |
+| [max-ollama](https://github.com/Fgeeha/max-ollama)                                       | Chat with local Ollama models inside MAX; streamed replies, model switch, vision | Python, maxapi, Ollama, Docker                   |
+| [template-max-bot-github-gitea](https://github.com/Fgeeha/template-max-bot-github-gitea) | Production-ready bot template with dual CI/CD for GitHub Actions and Gitea       | Python, maxapi, uv, Docker, polling and webhook  |
+| [max-action](https://github.com/Fgeeha/max-action)                                       | GitHub Action that sends build, deploy and PR notifications to MAX               | Go, zero dependencies, MAX Bot API               |
+| [base-max-bot](https://github.com/Fgeeha/base-max-bot)                                   | FAQ bot with an in-bot admin panel, broadcasts and email notifications           | Python, SQLAlchemy 2, asyncpg, Alembic, pytest   |
+| [ID Helper Bot](https://github.com/Fgeeha/ID-Helper-Bot-max)                             | Resolves `user_id`, `chat_id` and media IDs for MAX bot development              | Python, maxapi, Docker, uv                       |
+
 ### More Projects
 
 | Project                                                          | Description                                                                | Stack                             |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------- |
 | [rocm-smi-exporter](https://github.com/Fgeeha/rocm-smi-exporter) | Prometheus exporter and Grafana dashboards for AMD GPU metrics             | Python, ROCm, Prometheus, Grafana |
+| [Tg-ollama](https://github.com/Fgeeha/Tg-ollama)                 | Telegram bot backed by local Ollama models                                 | Python, aiogram, Ollama           |
 | [monitor-dir](https://gitverse.ru/nkolesnikov/monitor-dir)       | File integrity monitoring with Prometheus metrics                          | Python, Docker, Prometheus        |
 | [arxiv2word](https://github.com/Fgeeha/arxiv2word)               | Converts articles from arXiv into editable Word documents                  | Python, Pandoc, Docker, Poetry    |
 | [ga_detector](https://github.com/Fgeeha/ga_detector)             | Chrome and Firefox extension for detecting analytics and verification tags | JavaScript, Chrome, Firefox       |
@@ -156,6 +189,7 @@ I'm interested in contributing to projects related to:
 * self-hosted AI and local LLMs;
 * RAG pipelines and LLM observability;
 * Python and Go backend services;
+* messenger bots and chat automation;
 * monitoring and infrastructure tooling;
 * Prometheus exporters and Grafana integrations;
 * reproducible ML and MLOps workflows.
