@@ -53,17 +53,7 @@ Building **self-hosted AI assistants**, **monitoring systems**,
 * Monitoring for Linux and GPU infrastructure
 * CI/CD automation, security scanning and container workflows
 
-### Recently Pushed
 
-<!-- NOW:START -->
-| Repository | Updated |
-| --- | --- |
-| [Tg-ollama](https://github.com/Fgeeha/Tg-ollama) | 15.08.2026 |
-| [max-ollama](https://github.com/Fgeeha/max-ollama) | 15.08.2026 |
-| [app-panel](https://github.com/Fgeeha/app-panel) | 15.08.2026 |
-| [nskolesnikov.ru-CMS](https://github.com/Fgeeha/nskolesnikov.ru-CMS) | 15.08.2026 |
-| [stress-tester](https://github.com/Fgeeha/stress-tester) | 15.08.2026 |
-<!-- NOW:END -->
 
 ## Tech Stack
 
